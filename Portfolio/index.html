@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="new.css">
+    <!-- Include font-awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dr. Rabiya Akhtar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Greetings!</h2>
+            <div class="about-content">
+                <p> I'm passionate about crafting elegant and practical websites that leave a lasting impression. With a robust skill set that spans Python, HTML, CSS, JavaScript, Core PHP, and WordPress, I bring creativity and technical expertise to every project. Whether it's building dynamic web applications or ensuring seamless user experiences, I thrive on turning ideas into reality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-content">
+                <div class="skill">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-bootstrap"></i>
+                    <h3>BootStrap</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-wordpress"></i>
+                    <h3>WordPress</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-content">
+                <div class="project">
+                    <h3 onclick="toggleDetails('fb-clone-details')"> FACEBOOK CLONE
+                            <a href="https://fbclone94.000webhostapp.com/" target="_blank">
+                                <img src="web000.png" alt="Website Icon" class="project-icon">
+                                <span>Live Demo</span>
+                            </a>
+                    </h3>
+                    <h4>Skills:</h4>
+                    <h5>PHP, MySQL, JavaScript, AJAX, HTML, CSS, Bootstrap</h5>
+                    <div id="fb-clone-details" class="project-details" style="display: none;">
+                        <ul>
+                            <li>Create User Accounts: Users can sign up by providing their personal information. New user data is securely stored in the MySQL database.</li>
+                            <li>Read User Data: Retrieve and display user information from the database. Display user data in a tabular format for easy viewing.</li>
+                            <li>Update User Information: Users can edit their profile information. Changes are reflected in real-time and updated in the MySQL database.</li>
+                            <li>Delete User Accounts: Users have the option to delete their accounts. Deleted user data is permanently removed from the database.</li>
+                            <li>Data Validation: Form inputs are validated to ensure data integrity. Includes validation for email format, password strength, and other fields.</li>
+                            <li>Secure Authentication: User login system to ensure that only authenticated users can access or modify their data. Passwords are hashed for security before storing in the database.</li>
+                            <li>Responsive Design: User interface designed to be responsive and user-friendly. Ensures compatibility with various devices and screen sizes.</li>
+                            <li>Error Handling: Robust error handling to manage and display meaningful error messages. Ensures smooth user experience even when errors occur.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h3 onclick="toggleDetails('user-management-details')"> USER MANAGEMENT SYSTEM WITH CRUD FUNCTIONALITY IN PHP & MySQL
+                        <a href="https://crudfunctionalities.000webhostapp.com/" target="_blank">
+                            <img src="web000.png" alt="Website Icon" class="project-icon">
+                            <span>Live Demo</span>
+                        </a>
+                    </h3>
+                    <h4>Skills:</h4>
+                    <h5>PHP, HTML, CSS, Bootstrap, MySQL</h5>
+                    <div id="user-management-details" class="project-details" style="display: none;">
+                        <ul>
+                            <li>Create User Accounts: Users can sign up by providing their personal information. New user data is securely stored in the MySQL database.</li>
+                            <li>Read User Data: Retrieve and display user information from the database. Display user data in a tabular format for easy viewing.</li>
+                            <li>Update User Information: Users can edit their profile information. Changes are reflected in real-time and updated in the MySQL database.</li>
+                            <li>Delete User Accounts: Users have the option to delete their accounts. Deleted user data is permanently removed from the database.</li>
+                            <li>Data Validation: Form inputs are validated to ensure data integrity. Includes validation for email format, password strength, and other fields.</li>
+                            <li>Secure Authentication: User login system to ensure that only authenticated users can access or modify their data. Passwords are hashed for security before storing in the database.</li>
+                            <li>Responsive Design: User interface designed to be responsive and user-friendly. Ensures compatibility with various devices and screen sizes.</li>
+                            <li>Error Handling: Robust error handling to manage and display meaningful error messages. Ensures smooth user experience even when errors occur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="more-projects">
+                <a href="projects.html">View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, please email me at <a href="mailto:rabiya.akhtar94@gmail.com">rabiya.akhtar94@gmail.com</a>.</p>
+            <div class="social-links">
+                <a href="https://github.com/RabiyaAkhtar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/dr-rabiya-akhtar" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDetails(detailsId) {
+            const details = document.getElementById(detailsId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

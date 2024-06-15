@@ -1,0 +1,236 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #003973, #E5E5BE); /* Gradient in shades of blue */
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Section Styles */
+section {
+    padding: 20px 0;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+section#about {
+    background: linear-gradient(90deg, #6dd5fa, #2980b9); /* Light blue gradient */
+}
+
+section#skills {
+    background: linear-gradient(90deg, #89f7fe, #66a6ff); /* Soft blue gradient */
+}
+
+section#projects {
+    background: linear-gradient(90deg, #56ccf2, #2f80ed); /* Bright blue gradient */
+}
+
+section#contact {
+    background: linear-gradient(90deg, #2b5876, #4e4376); /* Darker blue gradient */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Skills Section */
+.skills-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    margin: 20px;
+}
+
+.skill i {
+    font-size: 3em;
+    color: #333;
+}
+
+.skill h3 {
+    margin-top: 10px;
+}
+
+/* Projects Section */
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.project h4, .project h5 {
+    margin-top: 10px;
+}
+
+.project .project-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.project-details {
+    margin-top: 10px;
+    display: none;
+}
+
+.more-projects {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-projects a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.more-projects a:hover {
+    background: #0056b3;
+}
+
+/* Contact Section */
+section#contact .social-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+section#contact .social-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+section#contact .social-links a:hover {
+    color: #0073b1; /* LinkedIn color */
+}
+
+section#contact .social-links a:nth-child(1):hover {
+    color: #333; /* GitHub color */
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul li a {
+        padding: 10px;
+        display: block;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}

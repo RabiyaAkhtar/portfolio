@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include font-awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body section {
+            background-color: rgb(169, 194, 219);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .container h2 {
+            width: 100%;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 40px); /* Responsive: 3 cards per row with some gap */
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        .project h3 {
+            cursor: pointer; /* Change cursor to pointer for clickable heading */
+        }
+        .project h3:hover {
+            color: #ee8383; /* Change color on hover */
+            font-weight: bold; /* Make font bold on hover */
+        }
+        .project-details {
+            display: none; /* Hide details by default */
+            margin-top: 10px;
+        }
+        .project a img {
+            width: 24px; /* Adjust the size as needed */
+            height: 24px; /* Adjust the size as needed */
+            vertical-align: middle; /* Align the icon with the text */
+        }
+        #home {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #home a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+        }
+        #home a:hover {
+            color:#ee8383;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 calc(50% - 40px); /* Responsive: 2 cards per row */
+            }
+        }
+        @media (max-width: 480px) {
+            .project {
+                flex: 1 1 100%; /* Responsive: 1 card per row */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="projects">
+        <div class="container">
+            <h2>PROJECTS</h2>
+
+            <div class="project">
+                <h3 onclick="toggleDetails('url-shortener-details')">URL SHORTENER  
+                <a href="https://github.com/RabiyaAkhtar/Url-Shortner" target="_blank"><i class="fab fa-github"></i> </a></h3>
+                <h4>Skills:</h4>
+                <h5>Flask, SQLite, JavaScript, CSS Tailwind, API Development</h5>
+                <div id="url-shortener-details" class="project-details">
+                    <ul>
+                        <li>Shorten URLs: Easily create short URLs for long links.</li>
+                        <li>URL Testing: Check the existence of short URLs in the database.</li>
+                        <li>Redirects: Redirect users from short URLs to the original links.</li>
+                        <li>QR Code Generation: Generate QR codes for short URLs, enhancing accessibility.</li>
+                        <li>User Management: Robust sign-up and sign-in system storing user information securely in an SQLite database.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3 onclick="toggleDetails('atm-login-details')"> ATM LOGIN SYSTEM  
+                <a href="https://github.com/RabiyaAkhtar/ATM-Login-System" target="_blank"><i class="fab fa-github"></i> </a></h3>
+                <h4>Skills:</h4>
+                <h5>Python, CSV</h5>
+                <div id="atm-login-details" class="project-details">
+                    <ul>
+                        <li><a href="ATM_Proj_Presentation.pdf" TARGET="_blank">Project PDF</a></li>
+                        <li>User Authentication: Unveil the art of secure user authentication, where account numbers and PINs are your passport to the vault</li>
+                        <li>CSV Data Wizardry: Watch as user account data dances elegantly within the mystical realm of a CSV file, ready for your command.</li>
+                        <li>Security Enchantment: Witness the fortress of PIN verification, guarding the treasures hidden behind the login screen.</li>
+                        <li>Error-Handling Magic: Be prepared for the unexpected with our built-in error-handling spells, ensuring smooth user experiences.</li>
+                        <li>Sleek Command-Line Interface: Navigate the ATM Magic Vault effortlessly with a user-friendly command-line interface.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3 onclick="toggleDetails('interactive-web-page-details')">INTERACTIVE WEB PAGE WITH DYNAMIC ELEMENTS
+                <a href="https://rabiyaakhtar.github.io/js-code/" target="_blank"><i class="fab fa-github"></i> </a></h3>
+                <h4>Skills:</h4>
+                <h5>JavaScript, HTML CSS, Bootstrap</h5>
+                <div id="interactive-web-page-details" class="project-details">
+                    <ul>
+                        <li>Dynamic Content Update: Change text and image content interactively with a button click.</li>
+                        <li>Toggle Text Display: Switch between different text messages using a toggle button.</li>
+                        <li>Image Swap: Toggle between two images to reflect different states.</li>
+                        <li>Form Validation: Validate form inputs for name, email, and phone number before submission.</li>
+                        <li>Counter Increment: Increment a counter value interactively with a button click.</li>
+                        <li>Dropdown Information Display: Show detailed information based on selected options from a dropdown menu.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <h3 onclick="toggleDetails('figma-template-details')">WEB PAGE RECREATED FROM FIGMA TEMPLATE USING HTML, CSS, & BOOTSTRAP
+                <a href="figma.html" target="_blank"><img src="figma.png" alt="Website Icon"></a></h3>
+                <h4>Skills:</h4>
+                <h5>Figma, HTML, CSS, Bootstrap</h5>
+                <div id="figma-template-details" class="project-details">
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Figma Template Recreation</li>
+                        <li>Clean and Semantic HTML</li>
+                        <li>Custom CSS Styling</li>
+                        <li>Bootstrap Integration</li>
+                        <li>Interactive Elements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3 onclick="toggleDetails('quiz-game-details')"> INTERACTIVE QUIZ GAME
+                <a href="https://665c9e34e7f81176deef4e3b--zesty-tartufo-53d7b7.netlify.app/" target="_blank"><img src="netlify.png" alt="Website Icon"></a></h3>
+                <h4>Skills:</h4>
+                <h5>JavaScript, HTML, CSS</h5>
+                <div id="quiz-game-details" class="project-details">
+                    <ul>
+                        <li>Dynamic Quiz Questions: Enjoy a variety of questions covering different topics</li>
+                        <li>Lifelines: Use lifelines to increase your chances of answering correctly.</li>
+                        <li>Flip Questions: Encounter a twist with the option to flip questions for added challenge</li>
+                        <li>User-Friendly Interface: A simple and interactive console interface for a seamless user experience.</li>
+                        <li>Answer Questions: Input your answers and see if you can accumulate winnings.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Add more projects as needed -->
+        </div>
+        <div id="home"><a href="index.html">Back</a></div>
+    </section>
+
+
+    <footer>
+        <div class="footcontainer">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function toggleDetails(detailsId) {
+            const details = document.getElementById(detailsId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
